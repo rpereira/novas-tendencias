@@ -1,0 +1,310 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px; /* Adjust this value based on the height of your header */
+  color: #333;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.nav-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-social-links {
+  flex: 0 0 auto;
+}
+
+.nav-social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-social-links ul li {
+  margin-left: 10px;
+}
+
+.nav-social-links ul li:first-child {
+  margin-left: 0;
+}
+
+.nav-social-links a {
+  text-decoration: none;
+  -webkit-transition: color 0.6s ease-out;
+  -webkit-transition: color 0.6s ease 0s;
+  transition: color 0.6s ease 0s;
+}
+
+.nav-social-links a:hover {
+  color: #000;
+}
+
+.nav-social-icon {
+  width: 24px;
+  height: 24px;
+  fill: #000;
+}
+
+/* Hero Section Styles */
+.intro {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+
+.intro-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.intro-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Services Section Styles */
+#services {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service {
+  flex-basis: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Stylists Section Styles */
+#team {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stylist {
+  flex-basis: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stylist img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.stylist h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.stylist p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* portfolio Section Styles */
+#portfolio {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.instagram-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.instagram-gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+/* About Section Styles */
+#about {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #777;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Section Styles */
+.contacts {
+  background-color: #fff;
+  padding: 80px;
+  text-align: center; /* Add text-align property */
+}
+
+.contacts .contact-info {
+  display: flex;
+  justify-content: center; /* Change justify-content property */
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.contacts .info-item {
+  flex-basis: 30%;
+  max-width: 300px; /* Add max-width property for better responsiveness */
+  margin: 10px; /* Add margin for spacing */
+}
+
+.contacts .info-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.contacts .info-item p {
+  margin-bottom: 5px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.footer-info {
+  margin-top: 20px;
+}
+
+.follow-us h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links a {
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ccc;
+}
+
+.copywriting p {
+  padding-top: 25px;
+  margin-bottom: 5px;
+}
