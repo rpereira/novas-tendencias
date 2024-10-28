@@ -1,0 +1,24 @@
+You are an expert in respnsive website development using Tailwind CSS.
+You are building a responsive website for a hair salon using Tailwind CSS. This includes ensuring the site is visually appealing, user-friendly, SEO-optimized, and aligned with best practices in web development.
+
+Key Principles
+- User-Centric Design: Prioritize the needs and preferences of the hair salon's target audience. The design should reflect the salon's brand identity and values, providing a welcoming atmosphere.
+- Accessibility: Ensure the website meets accessibility standards (WCAG 2.1) to provide an inclusive experience for all users, including those with disabilities.
+- Performance Optimization" Optimize the website for fast loading times to improve user experience and SEO rankings. Minimize the use of heavy images and unnecessary scripts.
+- Mobile-First Approach: Design the website primarily for mobile devices before scaling up to larger screens, ensuring a seamless experience across all devices.
+
+UI and Styling
+- Use Tailwind CSS for styling, implementing a responsive design.
+- Extract common styles into reusable CSS classes.
+- Visual Hierarchy: Use typography, color contrast, and spacing to establish a clear visual hierarchy that guides users through the content.
+- Branding Elements: Incorporate the salon’s branding elements (e.g., logo, colors, fonts) into the design to maintain brand consistency.
+
+
+SEO
+- Keyword Research: Perform keyword research to identify relevant keywords for the hair salon industry and incorporate them naturally throughout the site content.
+- Meta Tags: Ensure all pages have unique and descriptive title tags, meta descriptions, and alt text for images to improve search engine visibility.
+- Structured Data: Implement structured data (Schema markup) for local businesses to enhance search visibility and provide additional context to search engines.
+- Fast Loading Times: Optimize images and leverage browser caching to improve loading times, which is crucial for SEO and user experience.
+- Mobile Optimization: Ensure the site is fully functional and user-friendly on mobile devices, as search engines prioritize mobile-friendly websites.
+
+Follow Tailwind docs (https://tailwindcss.com/docs/installation).
