@@ -3,92 +3,80 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  padding-top: 60px; /* Adjust this value based on the height of your header */
   color: #333;
 }
 
-h2 {
+h1 {
   font-size: 36px;
   margin-bottom: 20px;
 }
 
+h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {}
+
+/* a {
+  color: #231f20;
+  text-decoration: none;
+  transition: color 0.6s ease;
+} */
+
+a:hover {
+  font-weight: 700;
+}
+
 /* Header Styles */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
+  padding: 1.3rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 60px;
-  background-color: #fff;
-  z-index: 9999;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 40px;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-}
-
-.nav-links ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.nav-links li {
-  margin-left: 20px;
-}
-
-.nav-social-links {
-  flex: 0 0 auto;
-}
-
-.nav-social-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.nav-social-links ul li {
-  margin-left: 10px;
-}
-
-.nav-social-links ul li:first-child {
-  margin-left: 0;
-}
-
-.nav-social-links a {
-  text-decoration: none;
-  -webkit-transition: color 0.6s ease-out;
-  -webkit-transition: color 0.6s ease 0s;
-  transition: color 0.6s ease 0s;
-}
-
-.nav-social-links a:hover {
   color: #000;
+  align-self: center;
+  margin-left: 1.2rem;
+  height: 100px;
 }
 
-.nav-social-icon {
-  width: 24px;
-  height: 24px;
-  fill: #000;
+nav {
+  margin: auto;
+}
+
+nav a {
+  color: #000;
+  padding: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.header-right ul {
+  display: block;
+  list-style: none;
+}
+
+.header-right li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu-icon {
+  color: #000;
+  cursor: pointer;
+  display: none;
+  /* Show this on mobile */
+}
+
+button {
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.9rem;
 }
 
 /* Hero Section Styles */
@@ -113,37 +101,39 @@ header {
 }
 
 /* Services Section Styles */
-#services {
-  padding: 80px 0;
+.services {
   text-align: center;
+  margin-top: 40px;
 }
 
-.services-container {
+.service-categories {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
-.service {
-  flex-basis: 300px;
+.service-category {
+  text-align: center;
+  margin: 10px;
   padding: 20px;
-  margin: 20px;
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  transition: transform 0.3s;
+  /* Add hover effect */
 }
 
-.service h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.service-category:hover {
+  transform: scale(1.05);
+  /* Scale effect on hover */
 }
 
-.service p {
-  font-size: 16px;
-  color: #777;
+.service-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-category ul li {
+  margin: 10px 0;
 }
 
 /* Stylists Section Styles */
@@ -188,7 +178,7 @@ header {
   color: #777;
 }
 
-/* portfolio Section Styles */
+/* Portfolio Section Styles */
 #portfolio {
   padding: 80px 0;
   text-align: center;
@@ -227,20 +217,20 @@ header {
 .contacts {
   background-color: #fff;
   padding: 80px;
-  text-align: center; /* Add text-align property */
+  text-align: center;
 }
 
 .contacts .contact-info {
   display: flex;
-  justify-content: center; /* Change justify-content property */
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 10px;
 }
 
 .contacts .info-item {
   flex-basis: 30%;
-  max-width: 300px; /* Add max-width property for better responsiveness */
-  margin: 10px; /* Add margin for spacing */
+  max-width: 300px;
+  margin: 10px;
 }
 
 .contacts .info-item h3 {
@@ -267,7 +257,7 @@ footer {
 }
 
 .footer-logo img {
-  height: 50px;
+  height: 100px;
 }
 
 .footer-info {
