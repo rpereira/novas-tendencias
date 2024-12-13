@@ -224,10 +224,22 @@ section h1 {
   object-fit: cover;
 }
 
+/* Section Background Alternation */
+section {
+  padding: 6rem 0;
+}
+
+section:nth-of-type(odd) {
+  background-color: var(--background);
+}
+
+section:nth-of-type(even) {
+  background-color: white;
+}
+
 /* Services Section Styles */
 .services {
   text-align: center;
-  margin-top: 40px;
 }
 
 .service-categories {
@@ -313,7 +325,6 @@ section h1 {
 #portfolio {
   padding: 5rem 0;
   text-align: center;
-  background-color: #fff;
 }
 
 .gallery-container {
@@ -429,7 +440,6 @@ section h1 {
 
 /* Contact Section Styles */
 .contacts {
-  background-color: #fff;
   padding: 80px;
   text-align: center;
 }
