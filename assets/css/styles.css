@@ -19,6 +19,16 @@
   /* Transitions */
   --transition-fast: 0.3s ease;
   --transition-slow: 0.6s ease;
+
+  /* Additional color utilities */
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --overlay-color: rgba(0, 0, 0, 0.7);
+  --header-bg: rgba(255, 255, 255, 0.98);
+
+  /* Use these for consistent shadows */
+  --shadow-sm: 0 2px 4px var(--shadow-color);
+  --shadow-md: 0 4px 20px var(--shadow-color);
+  --shadow-lg: 0 10px 30px var(--shadow-color);
 }
 
 /* Reset & Base Styles */
@@ -61,7 +71,7 @@ section h1 {
   backdrop-filter: blur(10px);
   z-index: 1000;
   padding: var(--spacing-sm) 0;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-md);
 }
 
 .header-container {
@@ -92,7 +102,7 @@ section h1 {
 }
 
 .nav-link {
-  color: #333;
+  color: var(--text);
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
@@ -114,7 +124,7 @@ section h1 {
 }
 
 .nav-link:hover {
-  color: #000;
+  color: var(--primary);
   font-weight: 700;
 }
 
@@ -124,7 +134,7 @@ section h1 {
 }
 
 .social-link {
-  color: #000;
+  color: var(--primary);
   transition: color 0.3s ease;
 }
 
@@ -135,7 +145,7 @@ section h1 {
 }
 
 .social-link:hover {
-  color: #333;
+  color: var(--text);
 }
 
 .mobile-menu-btn {
@@ -150,7 +160,7 @@ section h1 {
   display: block;
   width: 24px;
   height: 2px;
-  background-color: #333;
+  background-color: var(--text);
   position: relative;
   transition: background-color 0.3s ease;
 }
@@ -161,7 +171,7 @@ section h1 {
   position: absolute;
   width: 24px;
   height: 2px;
-  background-color: #333;
+  background-color: var(--text);
   transition: transform 0.3s ease;
 }
 
@@ -256,7 +266,7 @@ section:nth-of-type(even) {
   background: white;
   padding: 2.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-md);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -341,9 +351,9 @@ section:nth-of-type(even) {
   flex-basis: 300px;
   padding: 20px;
   margin: 20px;
-  background-color: #fff;
+  background-color: white;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
   height: 350px;
@@ -365,7 +375,7 @@ section:nth-of-type(even) {
 
 .stylist p {
   font-size: 16px;
-  color: #777;
+  color: var(--text);
   flex-grow: 1;
 }
 
@@ -436,8 +446,8 @@ section:nth-of-type(even) {
 
 /* Load More Button */
 .gallery-load-more {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--background);
   padding: 0.75rem 2rem;
   border: none;
   border-radius: 0.375rem;
@@ -447,7 +457,7 @@ section:nth-of-type(even) {
 }
 
 .gallery-load-more:hover {
-  background-color: #333;
+  background-color: var(--text);
 }
 
 /* Responsive Design */
@@ -476,13 +486,13 @@ section:nth-of-type(even) {
 #sobre-nos {
   padding: 80px 0;
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: var(--background);
 }
 
 #sobre-nos p {
   font-size: 18px;
   line-height: 1.5;
-  color: #777;
+  color: var(--text);
   max-width: 800px;
   margin: 0 auto;
 }
@@ -517,8 +527,8 @@ section:nth-of-type(even) {
 
 /* Footer Styles */
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--background);
   padding: 40px 0;
 }
 
@@ -538,14 +548,14 @@ footer {
 }
 
 .follow-us h3 {
-  color: #fff;
+  color: var(--background);
   margin-bottom: 10px;
 }
 
 footer .social-icon {
   width: 24px;
   height: 24px;
-  fill: #fff;
+  fill: var(--background);
 }
 
 .social-links {
@@ -564,7 +574,7 @@ footer .social-icon {
 }
 
 .social-links a:hover {
-  color: #ccc;
+  color: var(--accent);
 }
 
 .copywriting p {
