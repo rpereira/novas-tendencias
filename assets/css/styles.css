@@ -1,8 +1,8 @@
 :root {
   /* Color Palette */
   --primary: #231f20;
-  --secondary: #a67c52;
-  --accent: #d4b08c;
+  --secondary: #9c6644;
+  --accent: #e3b595;
   --background: #faf9f8;
   --text: #2c2c2c;
 
@@ -124,7 +124,7 @@ section h1 {
 }
 
 .nav-link:hover {
-  color: var(--primary);
+  color: var(--secondary);
   font-weight: 700;
 }
 
@@ -134,7 +134,7 @@ section h1 {
 }
 
 .social-link {
-  color: var(--primary);
+  color: var(--secondary);
   transition: color 0.3s ease;
 }
 
@@ -145,7 +145,7 @@ section h1 {
 }
 
 .social-link:hover {
-  color: var(--text);
+  color: var(--accent);
 }
 
 .mobile-menu-btn {
@@ -313,7 +313,7 @@ section:nth-of-type(even) {
 }
 
 .service-category ul li:hover {
-  background: rgba(166, 124, 82, 0.05);
+  background: rgba(156, 102, 68, 0.05);
   transform: translateX(5px);
 }
 
@@ -371,6 +371,7 @@ section:nth-of-type(even) {
 .stylist h3 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: var(--secondary);
 }
 
 .stylist p {
@@ -424,7 +425,8 @@ section:nth-of-type(even) {
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(rgba(156, 102, 68, 0.85),
+      rgba(227, 181, 149, 0.85));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -446,7 +448,7 @@ section:nth-of-type(even) {
 
 /* Load More Button */
 .gallery-load-more {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   color: var(--background);
   padding: 0.75rem 2rem;
   border: none;
@@ -457,7 +459,7 @@ section:nth-of-type(even) {
 }
 
 .gallery-load-more:hover {
-  background-color: var(--text);
+  background-color: var(--accent);
 }
 
 /* Responsive Design */
@@ -523,6 +525,10 @@ section:nth-of-type(even) {
 
 .contacts .info-item p {
   margin-bottom: 5px;
+}
+
+.info-item h3 svg {
+  fill: var(--secondary);
 }
 
 /* Footer Styles */
