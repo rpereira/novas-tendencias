@@ -334,50 +334,93 @@ section:nth-of-type(even) {
 
 /* Stylists Section Styles */
 #equipa {
-  padding: 80px 0;
+  padding: var(--spacing-lg) 0;
   text-align: center;
+  background-color: var(--background);
 }
 
 .team-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   flex-wrap: wrap;
+  gap: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 2rem auto 0;
+  padding: 0 var(--spacing-md);
 }
 
 .stylist {
-  flex-basis: 300px;
-  padding: 20px;
-  margin: 20px;
+  flex: 0 1 300px;
+  padding: var(--spacing-md);
   background-color: white;
-  border-radius: 4px;
-  box-shadow: var(--shadow-sm);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
   display: flex;
   flex-direction: column;
-  height: 350px;
   align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.stylist:hover {
+  box-shadow: var(--shadow-lg);
 }
 
 .stylist img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 10px;
+  border: 4px solid var(--accent);
+  transition: transform var(--transition-fast);
+}
+
+.stylist:hover img {
+  transform: scale(1.05);
 }
 
 .stylist h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
   color: var(--secondary);
+  margin: 0.5rem 0;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.stylist h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: var(--accent);
 }
 
 .stylist p {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--text);
-  flex-grow: 1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .team-container {
+    gap: 1.5rem;
+    padding: 0 var(--spacing-sm);
+  }
+
+  .stylist {
+    flex: 0 1 100%;
+    max-width: 320px;
+  }
+
+  .stylist img {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 /* Portfolio Section Styles */
