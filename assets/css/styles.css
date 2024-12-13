@@ -34,13 +34,19 @@ header {
   padding: 1.3rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  color: #000;
-  align-self: center;
+  display: flex;
+  align-items: center;
   margin-left: 1.2rem;
+}
+
+.logo img {
   height: 100px;
+  width: auto;
+  object-fit: contain;
 }
 
 nav {
@@ -352,7 +358,7 @@ footer {
 }
 
 .footer-logo img {
-  height: 100px;
+  height: 150px;
 }
 
 .footer-info {
