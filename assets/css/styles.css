@@ -222,11 +222,6 @@ a:hover {
   /* Add hover effect */
 }
 
-.service-category:hover {
-  transform: scale(1.05);
-  /* Scale effect on hover */
-}
-
 .service-category ul {
   list-style: none;
   padding: 0;
